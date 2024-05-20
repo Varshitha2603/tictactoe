@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="board" id="board">
+        <div data-index="1" class="tile right_border bottom_border"></div>
+        <div data-index="2" class="tile right_border bottom_border"></div>
+        <div data-index="3" class="tile bottom_border"></div>
+        <div data-index="4" class="tile right_border bottom_border"></div>
+        <div data-index="5" class="tile right_border bottom_border"></div>
+        <div data-index="6" class="tile bottom_border"></div>
+        <div data-index="7" class="tile right_border"></div>
+        <div data-index="8" class="tile right_border"></div>
+        <div data-index="9" class="tile"></div>
+        <div id="strike" class="strike"></div>
+    </div>
+    <div id="game_over_area" class="hidden">
+        <h2 id="game_over_text">Winner is "X"</h2>
+        <button id="play_again">Play Again</button>
+    </div>
+    <script src="tic_tac_toe.js"></script>
+</body>
+</html>

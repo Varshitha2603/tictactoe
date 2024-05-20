@@ -1,0 +1,142 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+    background-image: url(./Assests/background_img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img{
+    width: 360px;
+    position: relative;
+    left: 27%;
+    margin-top: -15%;
+}
+.container p{
+    color: rgb(228, 190, 23);
+    font-size: 20px;
+    width: 60%;
+    letter-spacing: 5px;
+    line-height: 40px;
+    margin-top: 170px;
+    /* margin-left: 50px; */
+}
+.container img{
+    width: 250px;
+    position: relative;
+    left: 80%;
+    margin-top: 20px;
+}
+.container #start_btn{
+    background-color: rgb(167, 95, 2);
+    margin-left: 60px;
+    margin-top: 50px;
+}
+h1{
+    color: rgb(228, 190, 23);
+}
+.tile{
+    color: rgb(228, 190, 23);
+    /* margin: 10px; */
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
+}
+.right_border{
+    border-right: 0.2em solid purple;
+}
+.bottom_border{
+    border-bottom: 0.2em solid purple;
+}
+.strike{
+    position: absolute;
+    background-color: brown;
+}
+.strike_row_1{
+    width: 100%;
+    height: 4px;
+    top: 15%;
+}
+.strike_row_2{
+    width: 100%;
+    height: 4px;
+    top: 48%;
+}
+.strike_row_3{
+    width: 100%;
+    height: 4px;
+    top: 83%;
+}
+.strike_column_1{
+    height: 100%;
+    width: 4px;
+    left: 15%;
+}
+.strike_column_2{
+    height: 100%;
+    width: 4px;
+    left: 48%;
+}
+.strike_column_3{
+    height: 100%;
+    width: 4px;
+    left: 83%;
+}
+.strike_diagonal_1{
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+.strike_diagonal_2{
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+#game_over_area{
+    text-align: center;
+    border: purple 8px solid;
+    padding: 20px;
+    width: 30%;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+h2{
+    color: rgb(228, 190, 23);
+    font-size: 2em;
+    margin-top: 0px;
+}
+button{
+    background-color: transparent;
+    color: rgb(228, 190, 23);
+    border: rgb(28, 190, 23) 2px solid;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.x_hover:hover::after{
+    content: "X";
+    opacity: 0.4;
+}
+.o_hover:hover::after{
+    content: "O";
+    opacity: 0.4;
+}
